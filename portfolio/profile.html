@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>profile</title>
+<link rel="stylesheet" href="./css/main.css"/>
+<link rel="shortcut icon" href="./icons/web.png">
+</head>
+<style>
+
+  /*@media queries for the page */
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) and (max-width: 599px) {
+        .firstContainer{
+          
+        margin-left: 20px;
+        margin-right: 20px;
+       margin-top: 0px;
+
+    }
+
+header{
+        background-image: url(linkind_background2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment:scroll;
+  height:165Px;
+}
+
+.profilePicture{
+        float: left;
+        border: 1px ridge #ffffff;
+        border-radius: 100%;
+        width:100px; 
+        height:100px;
+        margin-top: 40px;
+        margin-left: 2px;
+}
+
+
+
+.myContact p{
+        margin-left: 0px;
+       padding-top: 5px;
+       font: 900 normal 8px tahoma;
+       color: #ffffff;
+       width: 70%;
+}
+
+.myContact img{
+        width: 8px;
+        height: 8px;
+        border: 0px ridge;
+        background-color: #ffffff;
+        border-radius: 100%;
+}
+
+
+.myContact {
+        float: left;
+        margin-top: 0px;
+        margin-top: 18px;
+}
+
+
+.hireMe{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(2, 253, 2);
+    color: #ffffff;
+    font: 900 normal 10px tahoma;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 5px;
+ width:25%;
+}
+
+.download a{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(116, 179, 116);
+    color: #ffffff;
+    font: 900 normal 15px tahoma;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding: 10px;
+
+}
+
+
+.download a:hover{
+    background-color: rgb(128, 131, 128 0.5);
+
+}
+
+
+
+    /* href styling  for top_nav*/
+/* dropdown menu */
+#top_nav li:hover ul{
+    display: none;
+    
+    }
+  
+    #top_nav li{
+        position: relative;
+        list-style-type: none;
+       float: left;
+       padding-left: 30px;
+        }
+  
+         /* for the un-order list not to display before hover */
+        #top_nav ul ul{
+            position: absolute;
+          left: 0px;
+            display: none;
+           background-color: grey;
+           margin: 0px;
+            }
+
+
+/* unvisited link */
+#top_nav a:link {
+    color: #cec2c2;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  #top_nav a:hover li {
+    color: #ffffff;
+      background-color:rgba(3, 28, 53, 0.171);
+    
+  }
+
+/* top_nav CSS*/
+ #top_nav ul li{
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+
+#top_nav ul{
+   margin-left: 5px;
+}
+
+#top_nav{
+    position: fixed;
+  top: 0px;
+  background-color:#33b5e5;
+width: 65%;
+margin-left: 80px;
+
+
+}
+
+#top_nav ul li{
+    float: left;
+padding: 2px 5px; /* padding-top/bottom,  padding-left/right */
+    font: bold normal 11px tahoma;
+color: #ffffff;
+
+}
+    
+    
+    /*.....................................................*/
+
+        
+        .secondHeader{
+        font-size: 16px;
+        font-weight: bold;
+        margin-top:15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 200px;
+        padding:10px 0px 10px 10px;/*top right bottom left*/
+        background-color: #33b5e5;
+        color: white;
+        }
+        
+        /*.....................................................*/
+        
+        /* content styling */
+    .content{
+    font: 500 normal 15px tahoma;
+    }
+
+
+    
+   /*Cv Colour Styling */
+    .colourOne{
+        list-style-image: url(icons/white.jpg);
+box-shadow: 0px 0px  10px 0px grey;
+border: 2px ridge #33b5e5;
+background-color: #d3eef8;
+border-radius:10px;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 20px;
+    }
+
+    .colourOne ul li{
+margin-top: 20px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+
+    .colourOne:hover{
+        list-style-image: url(icons/blue.jpg);
+    box-shadow: 5px 0px  5px 0px #33b5e5;
+border: 5px ridge #33b5e5;
+background-color: #ffffff;
+border-radius:0px;
+}
+
+
+    .colourTwo{
+list-style-image: url(icons/red.jpg);
+box-shadow: 0px 0px  10px 0px grey;
+border: 2px ridge #e58933;
+background-color: #817f7f;
+border-radius: 10px;
+padding: 20px;
+margin-top: 20px;
+color: #ffffff;
+}
+
+.colourTwo ul li{
+margin-top: 20px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+    
+.colourTwo:hover{
+    list-style-image: url(icons/blue.jpg);
+    box-shadow: 5px 0px  5px 0px #e58933;
+    border: 5px ridge #e58933;
+background-color: #ffffff;
+border-radius:0px;
+color: #000000;
+}
+
+    
+    
+    
+    
+    /*.....................................................*/
+
+
+
+
+/* page footer styling for  wecome page*/
+/* page footer styling*/
+footer{
+background-color: rgb(236, 241, 241);
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+color: #000000;
+font-weight: 550;
+width: 100%;
+
+}
+
+
+/* second victor_image  footer styling*/
+.secondImage{
+    float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: wrap;
+margin-left: 20px;
+}
+
+
+.secondImage p{
+width:100px;
+font-size: 10px;
+text-align: center;
+}
+
+.secondImage img{
+width: 40px;
+height: 50px;
+}
+
+
+
+hr{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* media icons */
+.media{
+margin-left: 120px;
+margin-top: 10px;
+margin-bottom: 80px;
+}
+
+.media img{
+    padding: 3px 3px;
+border: 1px ridge rgb(252, 212, 212);
+border-radius: 100%;
+background-color: #8ed8f3;
+width: 25px;
+height: 25px;
+}
+
+
+.media a:hover  li img{
+    background-color:rgba(255, 255, 255, 0.5);
+border: 0px ridge rgb(247, 140, 140);
+padding: 8px;
+}
+
+
+.media ul li{
+    padding: 2px 2px;
+float: left;
+width: 10%;
+margin:5px 5px;
+}
+
+
+/* see more footer styling*/
+.see_more_designs{
+float: left;
+margin-top: 0px;
+margin-left: 5px;
+font-size: 10px;
+width: 20%;
+}
+
+
+.click_here :hover img{
+width: 30px;
+height: 30px;
+}
+
+.click_here a{
+color: #000000;
+}
+
+.click_here img{
+width: 25px;
+height: 25px;
+}
+
+.click_here{
+float: left;
+margin-top: 0px;
+margin-left: 20px;
+font-size: 10px;
+}
+
+/* footer header styling*/
+footer, .folow{
+text-align: center;
+padding-top: 20px;
+}
+/* copyright footer styling*/
+.copyright{
+opacity:80%;
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+}
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) and (max-width: 699px) {
+
+        .firstContainer{
+          
+          margin-left: 20px;
+          margin-right: 20px;
+         margin-top: 0px;
+  
+      }
+  
+  header{
+          background-image: url(linkind_background2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment:scroll;
+    height:165Px;
+  }
+  
+  .profilePicture{
+          float: left;
+          border: 1px ridge #ffffff;
+          border-radius: 100%;
+          width:110px; 
+          height:110px;
+          margin-top: 80px;
+          margin-left: 2px;
+  }
+  
+  
+  
+  .myContact p{
+          margin-left: 10px;
+         padding-top: 15px;
+         font: 900 normal 10px tahoma;
+         color: #ffffff;
+         width: 80%;
+  }
+  
+  .myContact img{
+          width: 10px;
+          height: 10px;
+          border: 0px ridge;
+          background-color: #ffffff;
+          border-radius: 100%;
+  }
+  
+  
+  .myContact {
+          float: left;
+          margin-top: 0px;
+          margin-top: 40px;
+  }
+  
+  
+  .hireMe{
+      border:0px ridge #000000;
+      border-radius: 3px;
+      background-color: rgb(2, 253, 2);
+      color: #ffffff;
+      font: 900 normal 12px tahoma;
+      margin-left: 10px;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      padding: 5px;
+   width:15%;
+  }
+  
+  .download a{
+      border:0px ridge #000000;
+      border-radius: 3px;
+      background-color: rgb(116, 179, 116);
+      color: #ffffff;
+      font: 900 normal 20px tahoma;
+      margin-top: 0px;
+      margin-left: 250px;
+      padding: 10px;
+  
+  }
+  
+  
+  .download a:hover{
+      background-color: rgb(128, 131, 128 0.5);
+  
+  }
+  
+  
+  
+      /* href styling  for top_nav*/
+  /* dropdown menu */
+  #top_nav li:hover ul{
+      display: none;
+      
+      }
+    
+      #top_nav li{
+          position: relative;
+          list-style-type: none;
+         float: left;
+         padding-left: 30px;
+          }
+    
+           /* for the un-order list not to display before hover */
+          #top_nav ul ul{
+              position: absolute;
+            left: 0px;
+              display: none;
+             background-color: grey;
+             margin: 0px;
+              }
+  
+  
+  /* unvisited link */
+  #top_nav a:link {
+      color: #cec2c2;
+      text-decoration: none;
+    }
+    
+    /* mouse over link */
+    #top_nav a:hover li {
+      color: #ffffff;
+        background-color:rgba(3, 28, 53, 0.171);
+      
+    }
+  
+  /* top_nav CSS*/
+   #top_nav ul li{
+      margin-top: 0px;
+      margin-right: 0px;
+  
+  }
+  
+  #top_nav ul{
+     margin-left: 10px;
+  }
+  
+  #top_nav{
+      position: fixed;
+    top: 0px;
+    background-color:#33b5e5;
+  width: 35%;
+  margin-left: 220px;
+  
+  
+  }
+  
+  #top_nav ul li{
+      float: left;
+  padding: 2px 5px; /* padding-top/bottom,  padding-left/right */
+      font: bold normal 11px tahoma;
+  color: #ffffff;
+  
+  }
+      
+      
+      /*.....................................................*/
+  
+          
+          .secondHeader{
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:15px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          width: 200px;
+          padding:10px 0px 10px 10px;/*top right bottom left*/
+          background-color: #33b5e5;
+          color: white;
+          }
+          
+          /*.....................................................*/
+          
+          /* content styling */
+      .content{
+      font: 500 normal 15px tahoma;
+      }
+  
+  
+      
+     /*Cv Colour Styling */
+      .colourOne{
+          list-style-image: url(icons/white.jpg);
+  box-shadow: 0px 0px  10px 0px grey;
+  border: 2px ridge #33b5e5;
+  background-color: #d3eef8;
+  border-radius:10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+      }
+  
+      .colourOne ul li{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  }
+  
+      .colourOne:hover{
+          list-style-image: url(icons/blue.jpg);
+      box-shadow: 5px 0px  5px 0px #33b5e5;
+  border: 5px ridge #33b5e5;
+  background-color: #ffffff;
+  border-radius:0px;
+  }
+  
+  
+      .colourTwo{
+  list-style-image: url(icons/red.jpg);
+  box-shadow: 0px 0px  10px 0px grey;
+  border: 2px ridge #e58933;
+  background-color: #817f7f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  }
+  
+  .colourTwo ul li{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  }
+      
+  .colourTwo:hover{
+      list-style-image: url(icons/blue.jpg);
+      box-shadow: 5px 0px  5px 0px #e58933;
+      border: 5px ridge #e58933;
+  background-color: #ffffff;
+  border-radius:0px;
+  color: #000000;
+  }
+      
+      /*.....................................................*/
+  
+
+/* page footer styling for  wecome page*/
+/* page footer styling*/
+footer{
+background-color: rgb(236, 241, 241);
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+color: #000000;
+font-weight: 550;
+width: 100%;
+
+}
+
+
+/* second victor_image  footer styling*/
+
+.secondImage{
+    float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: wrap;
+margin-left: 20px;
+}
+
+
+.secondImage p{
+width:100px;
+font-size: 10px;
+text-align: center;
+}
+
+
+.secondImage img{
+width: 90px;
+height: 100px;
+}
+
+
+
+hr{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* media icons */
+.media{
+margin-left: 220px;
+margin-top: 10px;
+margin-bottom: 80px;
+width: 50%;
+}
+
+.media img{
+    padding: 3px 3px;
+border: 1px ridge rgb(252, 212, 212);
+border-radius: 100%;
+background-color: #8ed8f3;
+width: 30px;
+height: 30px;
+}
+
+
+.media a:hover  li img{
+    background-color:rgba(255, 255, 255, 0.5);
+border: 0px ridge rgb(247, 140, 140);
+padding: 10px;
+}
+
+
+.media ul li{
+    padding: 2px 2px;
+float: left;
+width: 10%;
+margin:5px 5px;
+}
+
+
+/* see more footer styling*/
+.see_more_designs{
+float: left;
+margin-top: 40px;
+margin-left: 20px;
+font-size: 12px;
+}
+
+.click_here :hover img{
+    width: 35px;
+height: 35px;
+}
+
+.click_here a{
+color: #000000;
+}
+
+.click_here img{
+width: 30px;
+height: 30px;
+}
+
+.click_here{
+float: left;
+margin-top: 40px;
+margin-left: 10px;
+font-size: 12px;
+}
+
+/* footer header styling*/
+footer, .folow{
+text-align: center;
+padding-top: 20px;
+}
+/* copyright footer styling*/
+.copyright{
+opacity:80%;
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+}
+
+
+  /* Medium devices (landscape tablets, 700px and up) */
+  @media only screen and (min-width: 700px) and (max-width: 899px) {
+      
+        .firstContainer{
+          
+          margin-left: 20px;
+          margin-right: 20px;
+         margin-top: 0px;
+  
+      }
+  
+  header{
+          background-image: url(linkind_background3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment:scroll;
+    height:211Px;
+  }
+  
+  .profilePicture{
+          float: left;
+          border: 1px ridge #ffffff;
+          border-radius: 100%;
+          width:120px; 
+          height:120px;
+          margin-top: 100px;
+          margin-left: 2px;
+  }
+  
+  
+  
+  .myContact p{
+          margin-left: 20px;
+         padding-top: 10px;
+         font: 900 normal 13px tahoma;
+         color: #ffffff;
+         width: 80%;
+  }
+  
+  .myContact img{
+          width: 13px;
+          height: 13px;
+          border: 0px ridge;
+          background-color: #ffffff;
+          border-radius: 100%;
+  }
+  
+  
+  .myContact {
+          float: left;
+          margin-top: 0px;
+          margin-top: 50px;
+  }
+  
+  
+  .hireMe{
+      border:0px ridge #000000;
+      border-radius: 3px;
+      background-color: rgb(2, 253, 2);
+      color: #ffffff;
+      font: 900 normal 12px tahoma;
+      margin-left: 30px;
+      margin-top: 0px;
+      margin-bottom: 50px;
+      padding: 5px;
+   width:12%;
+  }
+  
+  .download a{
+      border:0px ridge #000000;
+      border-radius: 3px;
+      background-color: rgb(116, 179, 116);
+      color: #ffffff;
+      font: 900 normal 22px tahoma;
+      margin-top: 0px;
+      margin-left: 350px;
+      padding: 10px;
+  
+  }
+  
+  
+  .download a:hover{
+      background-color: rgb(128, 131, 128 0.5);
+  
+  }
+  
+  
+  
+      /* href styling  for top_nav*/
+  /* dropdown menu */
+  #top_nav li:hover ul{
+      display: none;
+      
+      }
+    
+      #top_nav li{
+          position: relative;
+          list-style-type: none;
+         float: left;
+         padding-left: 30px;
+          }
+    
+           /* for the un-order list not to display before hover */
+          #top_nav ul ul{
+              position: absolute;
+            left: 0px;
+              display: none;
+             background-color: grey;
+             margin: 0px;
+              }
+  
+  
+  /* unvisited link */
+  #top_nav a:link {
+      color: #cec2c2;
+      text-decoration: none;
+    }
+    
+    /* mouse over link */
+    #top_nav a:hover li {
+      color: #ffffff;
+        background-color:rgba(3, 28, 53, 0.171);
+      
+    }
+  
+  /* top_nav CSS*/
+   #top_nav ul li{
+      margin-top: 0px;
+      margin-right: 0px;
+  
+  }
+  
+  #top_nav ul{
+     margin-left: 15px;
+  }
+  
+  #top_nav{
+      position: fixed;
+    top: 0px;
+    background-color:#33b5e5;
+  width: 40%;
+  margin-left: 280px;
+  
+  
+  }
+  
+  #top_nav ul li{
+      float: left;
+  padding: 5px 5px; /* padding-top/bottom,  padding-left/right */
+      font: bold normal 15px tahoma;
+  color: #ffffff;
+  
+  }
+      
+      
+      /*.....................................................*/
+  
+          
+          .secondHeader{
+          font-size: 16px;
+          font-weight: bold;
+          margin-top:15px;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          width: 200px;
+          padding:10px 0px 10px 10px;/*top right bottom left*/
+          background-color: #33b5e5;
+          color: white;
+          }
+          
+          /*.....................................................*/
+          
+          /* content styling */
+      .content{
+      font: 500 normal 15px tahoma;
+      }
+  
+  
+      
+     /*Cv Colour Styling */
+      .colourOne{
+          list-style-image: url(icons/white.jpg);
+  box-shadow: 0px 0px  10px 0px grey;
+  border: 2px ridge #33b5e5;
+  background-color: #d3eef8;
+  border-radius:10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+      }
+  
+      .colourOne ul li{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  }
+  
+      .colourOne:hover{
+          list-style-image: url(icons/blue.jpg);
+      box-shadow: 5px 0px  5px 0px #33b5e5;
+  border: 5px ridge #33b5e5;
+  background-color: #ffffff;
+  border-radius:0px;
+  }
+  
+  
+      .colourTwo{
+  list-style-image: url(icons/red.jpg);
+  box-shadow: 0px 0px  10px 0px grey;
+  border: 2px ridge #e58933;
+  background-color: #817f7f;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  }
+  
+  .colourTwo ul li{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  }
+      
+  .colourTwo:hover{
+      list-style-image: url(icons/blue.jpg);
+      box-shadow: 5px 0px  5px 0px #e58933;
+      border: 5px ridge #e58933;
+  background-color: #ffffff;
+  border-radius:0px;
+  color: #000000;
+  }
+      
+      /*.....................................................*/
+
+    
+
+
+/* page footer styling for  wecome page*/
+/* page footer styling*/
+footer{
+background-color: rgb(236, 241, 241);
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+color: #000000;
+font-weight: 550;
+width: 100%;
+
+}
+
+
+/* second victor_image  footer styling*/
+.secondImage{
+    float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: wrap;
+margin-left: 20px;
+}
+
+
+.secondImage p{
+width:150px;
+font-size: 15px;
+text-align: center;
+}
+
+
+.secondImage img{
+width: 90px;
+height: 100px;
+}
+
+
+
+hr{
+    margin-top: 20px;
+}
+
+
+
+
+
+/* media icons */
+.media{
+margin-left: 330px;
+margin-top: 10px;
+margin-bottom: 80px;
+width: 50%;
+}
+
+.media img{
+    padding: 3px 3px;
+border: 1px ridge rgb(252, 212, 212);
+border-radius: 100%;
+background-color: #8ed8f3;
+width: 35px;
+height: 35px;
+}
+
+
+.media a:hover  li img{
+    background-color:rgba(255, 255, 255, 0.5);
+    border: 0px ridge rgb(247, 140, 140);
+padding: 10px;
+}
+
+
+.media ul li{
+    padding: 2px 2px;
+float: left;
+width: 10%;
+margin:5px 5px;
+}
+
+
+/* see more footer styling*/
+.see_more_designs{
+float: left;
+margin-top: 40px;
+margin-left: 50px;
+font-size: 15px;
+}
+
+.click_here :hover img{
+    width: 40px;
+height: 40px;
+}
+
+.click_here a{
+color: #000000;
+}
+
+.click_here img{
+width: 35px;
+height: 35px;
+}
+
+.click_here{
+float: left;
+margin-top: 40px;
+margin-left: 60px;
+font-size: 15px;
+}
+
+/* footer header styling*/
+footer, .folow{
+text-align: center;
+padding-top: 20px;
+}
+/* copyright footer styling*/
+.copyright{
+opacity:80%;
+text-align: center;
+margin-top: 20px;
+
+}
+
+
+    } 
+
+    
+    /* Large devices (laptops/desktops, 900px and up) */
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+
+        .firstContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+       margin-top: 40px;
+    }
+
+header{
+        background-image: url(linkind_background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment:scroll;
+  height:350Px;
+}
+
+.profilePicture{
+        float: left;
+        border: 1px ridge #ffffff;
+        border-radius: 100%;
+        width:200px; 
+        height:200px;
+        margin-top: 110px;
+        margin-left: 10px;
+}
+
+.myContact p{
+        margin-left: 20px;
+       padding-top: 5px;
+       font: 900 normal 15px tahoma;
+       color: #ffffff;
+}
+
+.myContact img{
+        width: 25px;
+        height: 25px;
+        border: 0px ridge;
+        background-color: #ffffff;
+        border-radius: 100%;
+}
+
+
+.myContact {
+        float: left;
+        margin-top: 110px;
+}
+
+.hireMe{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(2, 253, 2);
+    color: #ffffff;
+    font: 900 normal 15px tahoma;
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 10px;
+ width:15%;
+}
+
+.download a{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(116, 179, 116);
+    color: #ffffff;
+    font: 900 normal 25px tahoma;
+    margin-top: 10px;
+    margin-left: 500px;
+    padding: 20px;
+
+}
+
+.download a:hover{
+    background-color: rgb(128, 131, 128);
+    font: 900 normal 25px tahoma;
+  
+
+}
+
+
+
+    /* href styling  for top_nav*/
+/* dropdown menu */
+#top_nav li:hover ul{
+    display: block;
+    
+    }
+  
+    #top_nav li{
+        position: relative;
+        list-style-type: none;
+       float: left;
+       padding-left: 30px;
+        }
+  
+         /* for the un-order list not to display before hover */
+        #top_nav ul ul{
+            position: absolute;
+          left: 0px;
+            display: none;
+           background-color: grey;
+           margin: 0px;
+            }
+
+
+/* unvisited link */
+#top_nav a:link {
+    color: #cec2c2;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  #top_nav a:hover li {
+    color: #ffffff;
+      background-color:rgba(3, 28, 53, 0.171);
+    
+  }
+
+/* top_nav CSS*/
+ #top_nav ul li{
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+
+#top_nav ul{
+   margin-left: 10px;
+}
+
+#top_nav{
+    position: fixed;
+  top: 0px;
+  background-color:#33b5e5;
+width: 50%;
+margin-left: 200px;
+
+}
+
+#top_nav ul li{
+    float: left;
+padding: 8px 19.5px; /* padding-top/bottom,  padding-left/right */
+    font: bold normal 14px tahoma;
+color: #ffffff;
+
+}
+    
+    
+    /*.....................................................*/
+
+        
+        .secondHeader{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top:15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 350px;
+        padding:10px 0px 10px 10px;/*top right bottom left*/
+        background-color: #33b5e5;
+        color: white;
+        }
+        
+        /*.....................................................*/
+        
+        /* content styling */
+    .content{
+    font: 500 normal 24px tahoma;
+    }
+    
+   /*Cv Colour Styling */
+    .colourOne{
+        list-style-image: url(icons/square2.jpg);
+box-shadow: 20px 0px  20px 0px grey;
+border: 2px ridge #33b5e5;
+background-color: #d3eef8;
+border-radius:10px;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 20px;
+    }
+
+    .colourOne ul li{
+margin-top: 30px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+
+
+    .colourOne:hover{
+        list-style-image: url(icons/square.jpg);
+    box-shadow: 20px 0px  20px 0px #33b5e5;
+border: 5px ridge #33b5e5;
+background-color: #ffffff;
+border-radius:0px;
+}
+
+
+    .colourTwo{
+list-style-image: url(icons/square3.jpg);
+box-shadow: 0px 0px  10px 0px grey;
+border: 2px ridge #e58933;
+background-color: #817f7f;
+border-radius: 10px;
+padding: 20px;
+margin-top: 20px;
+color: #ffffff;
+}
+
+.colourTwo ul li{
+margin-top: 30px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+
+    
+.colourTwo:hover{
+    list-style-image: url(icons/square.jpg);
+    box-shadow: 20px 0px  20px 0px #e58933;
+    border: 5px ridge #e58933;
+background-color: #ffffff;
+border-radius:0px;
+color: #000000;
+}
+
+
+
+/* page footer styling for second page wecome page*/
+/* page footer styling*/
+footer{
+background-color: rgb(236, 241, 241);
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 992px;
+color: #000000;
+font-weight: 550;
+width: 100%;
+
+}
+
+
+/* second victor_image  footer styling*/
+.secondImage{
+    float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: wrap;
+margin-left: 20px;
+}
+
+
+.secondImage p{
+width:200px;
+font-size: 18px;
+text-align: center;
+}
+
+
+
+/* media icons */
+.media{
+margin-left: 550px;
+margin-top: 30px;
+margin-bottom: 100px;
+}
+
+
+.media img{
+padding: 3px 3px;
+border: 1px ridge rgb(252, 212, 212);
+border-radius: 100%;
+background-color: #8ed8f3;
+width: 40px;
+height: 40px;
+
+}
+
+
+
+.media a:hover  li img{
+background-color:rgba(255, 255, 255, 0.5);
+border: 0px ridge rgb(247, 140, 140);
+padding: 15px;
+
+}
+
+.media ul li{
+padding-left: 20px;
+float: left;
+
+}
+
+/* see more footer styling*/
+.see_more_designs{
+float: left;
+margin-top: 40px;
+margin-left: 150px;
+font-size: 18px;
+}
+
+
+.click_here  :hover img{
+width: 70px;
+height: 70px;
+}
+.click_here a{
+color: #000000;
+}
+
+.click_here{
+float: left;
+margin-top: 40px;
+margin-left: 200px;
+font-size: 18px;
+}
+
+/* footer header styling*/
+footer, .folow{
+text-align: center;
+padding-top: 20px;
+}
+/* copyright footer styling*/
+.copyright{
+opacity:80%;
+text-align: center;
+margin-top: 20px;
+
+}
+
+    } 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {    
+    .firstContainer{
+        margin-left: 20px;
+        margin-right: 20px;
+       margin-top: 40px;
+    }
+
+header{
+        background-image: url(linkind_background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment:scroll;
+  height:350Px;
+}
+
+.profilePicture{
+        float: left;
+        border: 1px ridge #ffffff;
+        border-radius: 100%;
+        width:300px; 
+        height:300px;
+        margin-top: 150px;
+        margin-left: 10px;
+}
+
+.myContact p{
+        margin-left: 20px;
+       padding-top: 10px;
+       font: 900 normal 15px tahoma;
+       color: #ffffff;
+}
+
+.myContact img{
+        width: 25px;
+        height: 25px;
+        border: 0px ridge;
+        background-color: #ffffff;
+        border-radius: 100%;
+}
+
+
+.myContact {
+        float: left;
+        margin-top: 150px;
+}
+
+.hireMe{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(2, 253, 2);
+    color: #ffffff;
+    font: 900 normal 15px tahoma;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 20px;
+ width:12%;
+}
+
+.download a{
+    border:0px ridge #000000;
+    border-radius: 3px;
+    background-color: rgb(116, 179, 116);
+    color: #ffffff;
+    font: 900 normal 25px tahoma;
+    margin-top: 10px;
+    margin-left: 600px;
+    padding: 20px;
+
+}
+
+.download a:hover{
+    background-color: rgb(128, 131, 128);
+    font: 900 normal 25px tahoma;
+  
+
+}
+
+
+
+    /* href styling  for top_nav*/
+/* dropdown menu */
+#top_nav li:hover ul{
+    display: block;
+    
+    }
+  
+    #top_nav li{
+        position: relative;
+        list-style-type: none;
+       float: left;
+       padding-left: 30px;
+        }
+  
+         /* for the un-order list not to display before hover */
+        #top_nav ul ul{
+            position: absolute;
+          left: 0px;
+            display: none;
+           background-color: grey;
+           margin: 0px;
+            }
+
+
+/* unvisited link */
+#top_nav a:link {
+    color: #cec2c2;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  #top_nav a:hover li {
+    color: #ffffff;
+      background-color:rgba(3, 28, 53, 0.171);
+    
+  }
+
+/* top_nav CSS*/
+ #top_nav ul li{
+    margin-top: 0px;
+    margin-right: 0px;
+
+}
+
+#top_nav ul{
+   margin-left: 10px;
+}
+
+#top_nav{
+    position: fixed;
+  top: 0px;
+  background-color:#33b5e5;
+width: 30%;
+margin-left: 500px;
+
+}
+
+#top_nav ul li{
+    float: left;
+padding: 8px 19.5px; /* padding-top/bottom,  padding-left/right */
+    font: bold normal 14px tahoma;
+color: #ffffff;
+
+}
+    
+    
+    /*.....................................................*/
+
+        
+        .secondHeader{
+        font-size: 28px;
+        font-weight: bold;
+        margin-top:15px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 350px;
+        padding:10px 0px 10px 10px;/*top right bottom left*/
+        background-color: #33b5e5;
+        color: white;
+        }
+        
+        /*.....................................................*/
+        
+        /* content styling */
+    .content{
+    font: 500 normal 24px tahoma;
+    }
+    
+   /*Cv Colour Styling */
+    .colourOne{
+        list-style-image: url(icons/square2.jpg);
+box-shadow: 20px 0px  20px 0px grey;
+border: 2px ridge #33b5e5;
+background-color: #d3eef8;
+border-radius:10px;
+margin-bottom: 20px;
+margin-top: 20px;
+padding: 20px;
+    }
+
+    .colourOne ul li{
+margin-top: 30px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+
+
+    .colourOne:hover{
+        list-style-image: url(icons/square.jpg);
+    box-shadow: 20px 0px  20px 0px #33b5e5;
+border: 5px ridge #33b5e5;
+background-color: #ffffff;
+border-radius:0px;
+}
+
+
+    .colourTwo{
+list-style-image: url(icons/square3.jpg);
+box-shadow: 0px 0px  10px 0px grey;
+border: 2px ridge #e58933;
+background-color: #817f7f;
+border-radius: 10px;
+padding: 20px;
+margin-top: 20px;
+color: #ffffff;
+}
+
+.colourTwo ul li{
+margin-top: 30px;
+margin-left: 10px;
+margin-right: 0px;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+}
+
+    
+.colourTwo:hover{
+    list-style-image: url(icons/square.jpg);
+    box-shadow: 20px 0px  20px 0px #e58933;
+    border: 5px ridge #e58933;
+background-color: #ffffff;
+border-radius:0px;
+color: #000000;
+}
+
+   
+    
+    
+/* page footer styling for second page wecome page*/
+ /* page footer styling*/
+ footer{
+        background-color: rgb(236, 241, 241);
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        color: #000000;
+        font-weight: 550;
+        width: 100%;
+    
+    }
+    
+   
+    /* second victor_image  footer styling*/
+    .secondImage{
+    float: left;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: wrap;
+margin-left: 20px;
+}
+
+
+.secondImage p{
+width:300px;
+font-size: 18px;
+text-align: center;
+}
+
+
+
+
+/* media icons */
+.media{
+margin-left: 550px;
+margin-top: 20px;
+margin-bottom: 100px;
+}
+
+
+.media img{
+    padding: 3px 3px;
+border: 1px ridge rgb(252, 212, 212);
+border-radius: 100%;
+background-color: #8ed8f3;
+width: 40px;
+height: 40px;
+
+}
+
+
+
+    .media a:hover  li img{
+        background-color:rgba(255, 255, 255, 0.5);
+        border: 0px ridge rgb(247, 140, 140);
+        padding: 15px;
+
+  }
+
+    .media ul li{
+        padding-left: 20px;
+        float: left;
+        
+    }
+    
+    /* see more footer styling*/
+    .see_more_designs{
+        float: left;
+        margin-top: 40px;
+         margin-left: 150px;
+         font-size: 18px;
+    }
+
+
+    .click_here  :hover img{
+       width: 70px;
+       height: 70px;
+    }
+    .click_here a{
+        color: #000000;
+    }
+
+    .click_here{
+      float: left;
+      margin-top: 40px;
+      margin-left: 200px;
+      font-size: 18px;
+    }
+
+    /* footer header styling*/
+   footer, .folow{
+        text-align: center;
+        padding-top: 20px;
+    }
+    /* copyright footer styling*/
+    .copyright{
+        opacity:80%;
+        text-align: center;
+    margin-top: 20px;
+    
+    }
+
+
+}
+
+</style>
+<body>
+
+        <header>
+                <div>
+                        <img src="linkind_profile.jpg" alt="linkind_profile_picture" class="profilePicture">
+                   
+                </div>
+
+                <div class="myContact">
+                        <p><img src="./icons/location.png" alt="location_icon"> Redeem Christian Church, Apo Primary, FCT Abuja</p>
+                        <p><img src="./icons/smartPhone.png" alt="smartPhone_icon"> +2349039957725 <img src="./icons/whatsApp.png" alt="whatsApp_icon"></p>
+                        <p><img src="./icons/gmail.png" alt="gmail_icon"> ogundiranv.34@gmail.com</p>
+
+                        
+                </div>
+                
+                <nav id="top_nav">
+                        <ul>
+                                <a href="index.html" style="color: white;"><li>Home</a>
+                                        <ul>
+                                <a href="#personalProfile"><li>Personal Profile</li></a>
+                                <a href="#competences"><li>Competences</li></a>
+                                <a href="#relevantExperience"><li>Relevant Experience</li></a>
+                                <a href="#programmingSkills"><li>Programming skills</li></a>
+                                <a href="#workExperience"><li>Work Experience</li></a>
+                                <a href="#education"><li>Education</li></a>
+                                <a href="#certificate"><li>Certificate</li></a>
+                                <a href="#interests"><li>Interests</li></a>
+                                        </ul>
+                                </li>
+                                <a href="#competences"><li>Competences</li></a>
+                                <a href="#education"><li>Education</li></a>
+                                
+                                </ul>
+                    </nav>
+        </header>
+        <div class="clear"></div>
+                
+        <div class="hireMe">Open To Work</div>
+
+        <div class="download">
+            <a href="ogundiran_oluwatosin_victor_resume_Abuja.pdf" download>Download CV
+            </a></div>
+
+        <div class="clear"></div>
+            <div class="firstContainer"> 
+<section>
+<div  class="colourOne">
+<h2 class="secondHeader" id="personalProfile">PERSONAL PROFILE</h2><hr>
+    <ul class="content">
+       
+<li>A competent and committed Computer Science and Computer Engineering graduate looking
+     for a rewarding career in the Information Technology sector.</li></p>
+
+<li>I am very passionate about innovation and I am eager to get acquainted and stay updated with 
+    the newest development technologies which would enhance my skill set.
+
+<li>I am also an enthusiastic team player and strive to ensure that goals are achieved efficiently and on-time.</li>
+</ul>
+</div>
+
+<div  class="colourTwo">
+<h2 class="secondHeader" id="competences">COMPETENCES</h2><hr>
+<ul class="content">
+<li>Computer Engineering</li>
+<li>Database Administrator</li>
+<li>Data Analyst</li>
+<li>Network Engineering</li>
+<li>Graphic Design</li>
+<li>Digital Marketing</li>
+<li>Printing</li>
+<li>Hospitality Management</li>
+<li>proficient in Microsoft Office Packages</li>
+<li>Proficient in General purpose applications, Computer repairs and installation.</li>
+</ul>
+</div>
+
+<div  class="colourOne">
+<h2 class="secondHeader" id="relevantExperience">RELEVANT EXPERIENCE</h2><hr>
+<ul class="content">
+<li>VB-OIl Web Design.</li>
+<li>iRecharge banner and flyer design and printing.</li>
+<li>Co-design and branding plus printing of irecharge mass transportation branding.</li>
+<li>Carried out various designs and printing with the team.</li>
+<li>Proper maintenance of heavy-duty machines for all kinds of printing.</li>
+<li>Reports on daily work done.</li>
+</ul>
+</div>
+
+<div  class="colourTwo">
+<h2 class="secondHeader" id="programmingSkills">PROGRAMMING SKILLS</h2><hr>
+<ul class="content">
+<li>Front end - JavaScript, HTML5, CSS, Media Query.</ul></li>
+</div>
+
+<div class="colourOne">
+<h2 class="secondHeader" id="workExperience">WORK EXPERIENCE</h2><hr>
+<ul class="content">
+<li>Golden links Printing Press, Ota, Ondo State: Trainee Creative Graphic Designer from November 2012 - 2013.</li>
+<li>Cooperate Graphic Design and Printing Press, Ogbomoso, Oyo State: Graphic Designer and Printer Operator 2013 - 2014</li>
+<li>Saheed Computer Engineering Service, Osogbo, Osun State: Trainee Computer Engineering from August 2014 - 2015.</li>
+<li>Infostrategy Technologies, FCT Abuja: Assistant Creative Graphic Designer and Printing (NYSC) from May 2019 - 2020.</l>
+<li>Royal Rock Hotel and Event Centre: Front desk/Receptionist from June 2020– 2021.</li>
+<li>Royal Rock Hotel and Event Centre, Ilorin, Kwara State: Front Office Manager from January 2021 –2022</li>
+</ul>
+</div>
+
+<div class="colourTwo">
+<h2 class="secondHeader" id="education">EDUCATION</h2><hr>
+<ul class="content">
+<li>LinkedIn Learning Data Analytics: 1 Foundation certification exam 2022</li>
+<li>Google Digital Skills for Africa: The Fundamentals of Digital Marketing certification exam 2021 </li>
+<li>National Youth Service Corps ( N.Y.S.C) 2019</li>
+<li>Higher National Diploma (HND) Computer Science, Auchi Polytechnic, Auchi, Edo State 2018.</li>
+<li>National Diploma (ND) Computer Engineering, Osun State Polytechnic, Iree, Osun State 2015.</li>
+<li>West-African Senior Secondary School Certificate, Ighile Group of Schools, Udo Town, Edo State 2012.</li>
+<li>West-African junior Secondary School Certificate, Ighile Group of Schools, Udo Town, Edo State 2010.</li>
+<li>Primary School Leaving Certificate, Ighile Group of Schools, Udo Town, Edo State 2007.</li>
+</ul>
+</div>
+
+<div class="colourOne">
+<h2 class="secondHeader" id="certificate">Certificates</h2><hr>
+<ul class="content">
+<li>LinkedIn Learning Data Analytics: 1 Foundation certification exam 2022</li>
+<li>Google Digital Skills for Africa: The Fundamentals of Digital Marketing certification exam 2021 </li>
+<li>LinkedIn Learning HTML Certification 2022</li>
+</ul>
+</div>
+
+<div class="colourTwo">
+<h2 class="secondHeader" id="interests">INTERESTS</h2><hr>
+<ul class="content">
+<li>Enjoy trying new technology.</li>
+<li>Enjoy travelling and meeting people.</l>
+<li>listening to good music and going to the gym.</li>
+</div>
+
+<div class="colourOne">
+<h2 class="secondHeader" id="referees">REFEREES:</h2><hr>
+<ul class="content">
+<li>Available on request </li>
+</ul>
+</div>
+</section>
+
+</div>
+
+<footer >  
+        
+        <div class="follow">follow me on social media</div> 
+        <div class="clear"></div>
+        
+        <div class="media">
+            <ul>
+                <a href="graphic_designs.html"><li><img src="./icons/facebook.png" alt="facbook" width="22px" height="22px"/></li></a>
+               <a href="graphic_designs.html">  <li><img src="./icons/instagram.png" alt="instagram" width="22px" height="22px"/></li></a>
+                <a href="graphic_designs.html"> <li><img src="./icons/linkInd.png" alt="linkInd" width="22px" height="22px"/></li></a>
+                <a href="graphic_designs.html"> <li><img src="./icons/twitter.png" alt="twitter" width="22px" height="22px"/></li></a>
+            </ul>
+           </div>
+        
+           <div class="clear"></div>
+                <aside >
+                       <div  class="secondImage">
+                               <img src="./images/secondImage.jpg" alt="victor_image_green_shirt" width="71px" height="100px" style="border:1px solid #33b5e5; " />
+                             
+                                <span><P><cite>"Live every moment of your life"<br>
+                                    Ogundiran Victor</cite>
+                                  </P></span>
+                  
+                                              </div>
+                      
+                       <div class="see_more_designs">
+                             
+                        <p>To see more of my graphic designs</p>
+                </div>
+                <div class="click_here">
+                       <p><a href="graphic_designs.html">click here</a></p> 
+                        <p style="text-align: center;">
+                      <a href="graphic_designs.html"><img src="./icons/click_here_icon.gif" alt="click_here_icon.gif" width="48px" height="48px" class="click_gif"/></a>
+                 </p>
+                          
+                </div>
+        
+        
+        
+                       
+                </aside>
+                <div class="clear"></div>
+                
+                 <hr>
+        <div class="copyright">
+           <small>copyright&copy;Ogundiran Oluwatosin Victor. All rights reseved.</small> 
+        </div>
+        
+        </footer>
+        
+
+
+</body>
+</html>     

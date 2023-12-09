@@ -1,0 +1,34 @@
+/* default setup for the webpage */
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: tahoma, Times, serif;
+list-style-type: none;
+text-decoration: none;
+}
+
+/* to clear default margin and padding */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*.....................................................*/
+
+/* make this tag block level element */
+header, nav, article, section, footer{
+    display: block;
+}
+
+/*.....................................................*/
+
+/*clear float */
+.clear{
+    clear:both;
+}
+
+
+
+
+   
